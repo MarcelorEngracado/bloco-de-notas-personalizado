@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloco de Notas Moderno</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <header class="app-header">
+            <div>
+                <h1>Bloco de Notas do Flávio</h1>
+                <p>Suas anotações são salvas automaticamente no seu navegador.</p>
+            </div>
+            <div class="toolbar" role="toolbar" aria-label="Ações do bloco de notas">
+                <button id="saveButton" type="button">Salvar</button>
+                <button id="copyButton" type="button">Copiar</button>
+                <button id="exportButton" type="button">Exportar</button>
+                <button id="clearButton" type="button">Limpar</button>
+                <button id="themeToggle" type="button">Modo Noturno</button>
+            </div>
+        </header>
+
+        <div class="note-meta">
+            <span id="statusText">Carregando nota...</span>
+            <span id="wordCount">0 palavras</span>
+            <span id="charCount">0 caracteres</span>
+        </div>
+
+        <textarea id="blocoDeNotas" placeholder="Comece a digitar aqui..." aria-label="Bloco de notas"></textarea>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
