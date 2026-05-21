@@ -81,11 +81,11 @@ p {
 }
 
 .toolbar {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(100px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
     gap: 10px;
     width: 100%;
-    max-width: 340px;
+    justify-content: flex-end;
 }
 
 button {

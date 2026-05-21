@@ -117,13 +117,13 @@ function clearNote(textarea, storage) {
 }
 
 function applyTheme(theme) {
-    const html = document.documentElement;
+    const body = document.body;
     const button = document.getElementById('themeToggle');
     if (theme === 'dark') {
-        html.classList.add('dark');
+        body.classList.add('dark');
         if (button) button.textContent = 'Modo Claro';
     } else {
-        html.classList.remove('dark');
+        body.classList.remove('dark');
         if (button) button.textContent = 'Modo Noturno';
     }
 }
@@ -141,7 +141,7 @@ function loadTheme(storage) {
 }
 
 function toggleTheme(storage) {
-    const isDark = document.documentElement.classList.contains('dark');
+    const isDark = document.body.classList.contains('dark');
     const nextTheme = isDark ? 'light' : 'dark';
     applyTheme(nextTheme);
 
